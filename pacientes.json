@@ -1,0 +1,27 @@
+[
+    {
+      "name": "Juan",
+      "lastname": "Pérez",
+      "typeOfDocument": "DNI",
+      "documentNumber": "12345678",
+      "medicalHistoryNumber": "M123",
+      "enabled": true
+    },
+    {
+      "name": "María",
+      "lastname": "Gómez",
+      "typeOfDocument": "Pasaporte",
+      "documentNumber": "A98765432",
+      "medicalHistoryNumber": "M456",
+      "enabled": true
+    },
+    {
+      "name": "Carlos",
+      "lastname": "Rodríguez",
+      "typeOfDocument": "Cédula",
+      "documentNumber": "87654321",
+      "medicalHistoryNumber": "M789",
+      "enabled": true
+    }
+  ]
+  
