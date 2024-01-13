@@ -14,13 +14,13 @@ def guardar_datos(datos):
         json.dump(datos, archivo, indent=2)
 
 # Ruta para obtener todos los pacientes
-@app.route('/api/pacientes', methods=['GET'])
+@app.route('/pacientes', methods=['GET'])
 def obtener_pacientes():
     pacientes = cargar_datos()
     return jsonify(pacientes)
 
 # Ruta para agregar un nuevo paciente
-@app.route('/api/pacientes', methods=['POST'])
+@app.route('/paciente', methods=['POST'])
 def agregar_paciente():
     pacientes = cargar_datos()
     nuevo_paciente = {
@@ -34,7 +34,7 @@ def agregar_paciente():
     return jsonify({'mensaje': 'Paciente agregado correctamente'})
 
 # Ruta para actualizar información de un paciente
-@app.route('/api/pacientes/<int:id_paciente>', methods=['PUT'])
+@app.route('/pacientes/<int:id_paciente>', methods=['PUT'])
 def actualizar_paciente(id_paciente):
     pacientes = cargar_datos()
     for paciente in pacientes:
@@ -47,7 +47,7 @@ def actualizar_paciente(id_paciente):
     return jsonify({'mensaje': 'No se encontró un paciente con ese ID'})
 
 # Ruta para eliminar un paciente
-@app.route('/api/pacientes/<int:id_paciente>', methods=['DELETE'])
+@app.route('/pacientes/<int:id_paciente>', methods=['DELETE'])
 def eliminar_paciente(id_paciente):
     pacientes = cargar_datos()
     for paciente in pacientes:
